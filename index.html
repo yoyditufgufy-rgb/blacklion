@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackLion.com</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @Keyframes rgb-glow {
+            0% { border-color: #ff0000; box-shadow: 0 0 15px #ff0000; }
+            20% {border-color: #ff8800; box-shadow: 0 0 15px #ff8800; }
+            40% {border-color: #ffff00; box-shadow: 0 0 15px #ffff00; }
+            60% {border-color: #00ff00; box-shadow: 0 0 15px #00ff00; }
+            80% {border-color: #0000ff; box-shadow: 0 0 15px #0000ff; }
+            100% {border-color: #ff0000; box-shadow: 0 0 15px #ff0000; }
+        }
+        .rgb-hover:hover {
+            animation: rgb-glow 2s linear infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-4">
+    <div class="flex justify- mb-6 rgb-hover bg-gray-700 border border-gray-600 rounded-2xl p-4 ">
+            <img src="https://i.pinimg.com/280x280_RS/0e/f7/ab/0ef7ab1104edb4a8ec4366dc41e0172c.jpg" alt="Brand Logo" class="w-20 h-20 object-cover rounded-full border-2 border-white shadow-xl">
+    </div>
+    <div class="w-full max-w-2xl bg-gray-800 rounded-3xl p-8 shadow-2xl border border-gray-700 text-center">
+        <h1 class="text-3xl font-extrabold tracking-tight mb-2 bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
+        </h1>
+        <p class="text-gray-400 text-sm mb-8">Select a Category to find the best trending products</p>
+        <div class="grid grid-cols-2 sm:grid-cols3 gap-4">
+            <button onclick="location.href='mens.html'" class="rgb-hover bg-gray-700 border border-gray-600 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-1">
+                <img src="https://m.media-amazon.com/images/I/81DwCn3ZWlL._AC_SX342_SY445_QL70_ML2_.jpg" alt="Category image" class="w-12 h-12 object-cover rounded-xl shadow-inner"> <span class="font-semibold text-gray-200">Men's Fashion</span>
+            </button>
+            <button onclick="location.href='gadgets.html'" class="rgb-hover bg-gray-700 border border-gray-600 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-1">
+                <img src="https://static.vecteezy.com/system/resources/previews/057/516/211/non_2x/technology-gadgets-icon-set-free-vector.jpg" alt="Category image" class="w-12 h-12 object-cover rounded-xl shadow-inner"> <span class="font-semibold text-sm text-gray-200">Gadgets</span>
+            </button>
+            <button onclick="location.href='home decoration.html'" class="rgb-hover bg-gray-700 border border-gray-600 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-1">
+                <img src="https://cdn-icons-png.flaticon.com/512/2621/2621957.png" alt="Category image" class="w-12 h-12 object-cover rounded-xl shadow-inner">  <span class="font-semibold text-sm text-gray-200">Homer Decoration Items</span>
+            </button>
+            <button onclick="location.href='shoes.html'" class="rgb-hover bg-gray-700 border border-gray-600 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-1">
+                <img src="https://cdn.vectorstock.com/i/500p/52/29/running-shoe-icon-vector-3075229.jpg" alt="Category image" class="w-12 h-12 object-cover rounded-xl shadow-inner">  <span class="font-semibold text-sm text-gray-200">Shoes</span>
+            </button>
+            <button onclick="location.href='watches.html'" class="rgb-hover bg-gray-700 border border-gray-600 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-1">
+                <img src="https://m.media-amazon.com/images/I/71rr1zeHZRL._AC_UL320_.jpg" alt="Category image" class="w-12 h-12 object-cover rounded-xl shadow-inner">  <span class="font-semibold text-sm text-gray-200">Watches</span>
+            </button>
+            <button onclick="location.href='jewellry.html'" class="rgb-hover bg-gray-700 border border-gray-600 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-1">
+                <img src="https://m.media-amazon.com/images/I/71NAeDREC6L._AC_UL320_.jpg" alt="Category image" class="w-12 h-12 object-cover rounded-xl shadow-inner">  <span class="font-semibold text-sm text-gray-200">Necklase, Bracelet, Earring, Rings</span>
+            </button>
+            <button onclick="location.href='fitness.html'" class="rgb-hover bg-gray-700 border border-gray-600 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-1">
+                <img src="https://m.media-amazon.com/images/I/61CGsCgv9sL._AC_UL320_.jpg" alt="Category image" class="w-12 h-12 object-cover rounded-xl shadow-inner">  <span class="font-semibold text-sm text-gray-200">Fitness Product</span>
+            </button>
+            <button onclick="location.href='womandress.html'" class="rgb-hover bg-gray-700 border border-gray-600 rounded-2xl p-4 flex flex-col items-center justify-center gap-2 transition-all duration-300 transform hover:-translate-y-1">
+                <img src="https://m.media-amazon.com/images/I/71OWV0uu-HL._AC_UL320_.jpg" alt="Category image" class="w-12 h-12 object-cover rounded-xl shadow-inner">  <span class="font-semibold text-sm text-gray-200">Woman Fashion</span>
+            </button>
+        </div>
+    </div>
+    
+</body>
+</html>

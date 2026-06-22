@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Fashion</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Button RGB Effect on Hover -->
+    <style>
+        @keyframes rgb-glow {
+            0% { border-color: #ff0000; box-shadow: 0 0 12px #ff0000; }
+            33% { border-color: #00ff00; box-shadow: 0 0 12px #00ff00; }
+            66% { border-color: #0000ff; box-shadow: 0 0 12px #0000ff; }
+            100% { border-color: #ff0000; box-shadow: 0 0 12px #ff0000; }
+        }
+        .btn-rgb:hover {
+            animation: rgb-glow 1.5s linear infinite;
+            background: #e68a00;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 text-gray-800 min-h-screen p-4 sm:p-6">
+
+    <!-- Top Brand Section (Logo + Title) -->
+    <div class="text-center my-6">
+        <img src="https://i.pinimg.com/280x280_RS/0e/f7/ab/0ef7ab1104edb4a8ec4366dc41e0172c.jpg" alt="Brand Logo" class="w-16 h-16 object-cover rounded-full mx-auto border border-gray-300 shadow-sm">
+        <h1 class="text-2xl font-bold mt-2 text-gray-900 tracking-tight">Men's Fashion</h1>
+    </div>
+
+    <!-- AUTOMATIC GRID CONTAINER (Laptop me 4, Mobile me 2) -->
+    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 max-w-7xl mx-auto">
+
+        <!-- PRODUCT BLOCK 1 (Aapke Sketch ke hisab se vertical layout) -->
+        <div class="bg-white border border-gray-200 rounded-3xl p-4 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+            
+            <!-- 1. Product Image Block (Top) -->
+            <div class="w-full h-44 sm:h-52 bg-gray-50 rounded-2xl overflow-hidden flex items-center justify-center p-2">
+                <img src="https://m.media-amazon.com/images/I/71w6nS-Z23L._AC_UL320_.jpg" alt="Product Image" class="max-w-full max-h-full object-contain">
+            </div>
+            
+            <!-- 2. Description Block (Middle) -->
+            <div class="mt-4 flex-1">
+                <h3 class="text-xs sm:text-sm font-semibold text-gray-800 line-clamp-2 leading-snug text-center">
+                    Obla Mens Golf Polo Shirts Short Sleeve Dry Fit Performance
+                </h3>
+            </div>
+            
+            <!-- 3. Buy Button Block (Bottom) -->
+            <a href="YOUR_AMAZON_LINK_HERE" target="_blank" class="btn-rgb mt-4 block w-full text-center bg-amber-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm border border-transparent transition-all shadow-sm">
+                Buy on Amazon ↗
+            </a>
+            
+        </div>
+
+        <!-- PRODUCT BLOCK 2 -->
+        <div class="bg-white border border-gray-200 rounded-3xl p-4 flex flex-col justify-between shadow-sm hover:shadow-md transition-shadow">
+            
+            <div class="w-full h-44 sm:h-52 bg-gray-50 rounded-2xl overflow-hidden flex items-center justify-center p-2">
+                <img src="https://m.media-amazon.com/images/I/71w6nS-Z23L._AC_UL320_.jpg" alt="Product Image" class="max-w-full max-h-full object-contain">
+            </div>
+            
+            <div class="mt-4 flex-1">
+                <h3 class="text-xs sm:text-sm font-semibold text-gray-800 line-clamp-2 leading-snug text-center">
+                    Men's Premium Slim Fit Casual Shirt - Another Product Description
+                </h3>
+            </div>
+            
+            <a href="YOUR_AMAZON_LINK_HERE" target="_blank" class="btn-rgb mt-4 block w-full text-center bg-amber-500 text-white font-bold py-2.5 px-4 rounded-xl text-xs sm:text-sm border border-transparent transition-all shadow-sm">
+                Buy on Amazon ↗
+            </a>
+            
+        </div>
+
+    </div>
+
+</body>
+</html>
